@@ -169,7 +169,7 @@ const VoiceListener = () => {
       const matches = text.match(pattern);
       if (matches) {
         const timeStr = matches[0];
-        if (timeStr.includes('बजे') || timeStr.includes('o'clock')) {
+        if (timeStr.includes('बजे') || timeStr.includes('o\'clock')) {
           const hour = parseInt(timeStr.match(/\d+/)[0]);
           const reminderTime = new Date(now);
           reminderTime.setHours(hour, 0, 0, 0);
